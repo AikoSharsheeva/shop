@@ -1,0 +1,213 @@
+body {
+  background-color: hotpink;
+  margin: 0 auto;
+}
+img {
+  width: 100px;
+  height: 80px;
+}
+.img:hover {
+  background-color: rgb(62, 62, 62);
+  color: white;
+  transform: scale(1.05);
+}
+.navigation a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.navigation form {
+  width: 600px;
+  height: 55px;
+  display: flex;
+}
+.navigation form input {
+  flex: 1;
+  border: none;
+  outline: none;
+}
+.navigation form button {
+  outline: none;
+  border: none;
+  padding: 10px 50px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color: darkgrey;
+}
+
+.navigation {
+  margin: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.navigation .bi-person-fill {
+  font-size: 1.5625em;
+}
+.navigation .list:hover,
+.bi-person {
+  transition: 0.5s;
+}
+.navigation .list:hover,
+.bi-person {
+  transform: translateY(-20%);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 100;
+}
+.dropdownContent {
+  display: none;
+  position: absolute;
+  width: 350px;
+  text-shadow: 1px 1px 2px;
+  color: aliceblue;
+}
+.dropdown:hover .dropdownContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-inner {
+  height: 700px !important;
+}
+.carousel img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.conteiner {
+  display: flex;
+  padding: 15px 0;
+  justify-content: space-between;
+}
+.card {
+  width: 320px;
+  height: 600px;
+  border-radius: 25px;
+  padding: 0;
+  transition: 0.2s;
+}
+.card-image {
+  background-color: black;
+  height: 500px;
+  background-size: cover;
+  text-align: center;
+}
+.card h2 {
+  text-align: center;
+}
+.card p {
+  text-align: center;
+}
+
+.car-1 {
+  background-image: url(img/topshop.jpg);
+}
+
+.car-2 {
+  background-image: url(img/party.jpg);
+}
+.car-3 {
+  background-image: url(img/olaplex.jpg);
+}
+.car-4 {
+  background-image: url(img/warmCloth.jpg);
+}
+.card a {
+  background-color: black;
+  color: pink;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+}
+.card:hover {
+  background-color: rgb(62, 62, 62);
+  color: white;
+  transform: scale(1.05);
+}
+.menu {
+  display: none;
+}
+
+.menu-img {
+  height: 30px;
+  width: 40px;
+}
+.menu-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+}
+
+@media screen and (max-width: 1300px) {
+  .search {
+    display: none;
+  }
+  .navigation {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .menu {
+    display: block;
+  }
+
+  .dropdown {
+    display: none;
+  }
+  .list {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .brandSection {
+    display: block;
+  }
+}
+
+.block {
+  display: block;
+  width: 100%;
+  background-color: rgb(255, 182, 238);
+  color: black;
+  padding: 14px 28px;
+  font-size: 36px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: underline;
+  outline: 2px solid black;
+  border-radius: 10px;
+}
+
+.block:hover {
+  background-color: violet;
+  color: black;
+}
+.brandSection {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.footer {
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  justify-content: center;
+}
+.item {
+  width: 35px;
+  height: 35px;
+}
